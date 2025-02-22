@@ -6,12 +6,12 @@ PHASES = {
                 "type": "text_input",
                 "label": "What is your first name?",
             },
-            "activity": {
+            "saint": {
             	"type": "text_input",
-            	"label": "What is one of your favorite activities?"
+            	"label": "Who is your favorite saint?"
             }
         },
-        "user_prompt": "My name is {name} and I like {activity}. Write a haiku about me and my activity.",
+        "user_prompt": "My name is {name} and I love {saint}. Write a poem about my favorite saint.",
     },
 }
 
