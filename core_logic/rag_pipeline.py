@@ -32,7 +32,7 @@ ATLAS_VECTOR_SEARCH_INDEX_NAME = "vector_index"
 
 
 import streamlit as st
-from langchain_openai import OpenAIEmbeddings  # ✅ Correct Import
+from langchain_openai import OpenAIEmbeddings  #  Correct Import
 
 # Retrieve API key correctly from Streamlit Secrets
 openai_api_key = st.secrets["openai"]["api_key"]
