@@ -30,8 +30,15 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 ATLAS_VECTOR_SEARCH_INDEX_NAME = "vector_index"
 
-# Initialize OpenAI embeddings
-embeddings_model = OpenAIEmbeddings(openai_api_key=os.getenv('OPENAI_API_KEY'))
+
+import streamlit as st
+from langchain_openai import OpenAIEmbeddings  # ✅ Correct Import
+
+# Retrieve API key correctly from Streamlit Secrets
+openai_api_key = st.secrets["openai"]["api_key"]
+
+# Initialize OpenAI Embeddings
+embeddings_model = OpenAIEmbeddings(openai_api_key=openai_api_key)
 
 
 def get_file_hash(file_path):
