@@ -17,4 +17,6 @@ PHASES = {
 
 from core_logic.main import main
 if __name__ == "__main__":
-    main(config=globals())
+      # Pass only necessary config instead of globals()
+    main(config={"phases": PHASES})
+    #main(config=globals())
